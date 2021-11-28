@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import {Navbar, Container, Nav, Offcanvas, NavDropdown,} from 'react-bootstrap';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          maclin
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar bg="light" expand={false}>
+  <Container fluid>
+    <Navbar.Toggle aria-controls="offcanvasNavbar" />
+    <Navbar.Offcanvas
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <Offcanvas.Header closeButton>
+        <Offcanvas.Title id="offcanvasNavbarLabel">Offcanvas</Offcanvas.Title>
+      </Offcanvas.Header>
+      <Offcanvas.Body>
+        <Nav className="justify-content-end flex-grow-1 pe-3">
+          <Nav.Link href="#action1">Home</Nav.Link>
+          <Nav.Link href="#action2">Link</Nav.Link>
+          </Nav>
+      </Offcanvas.Body>
+    </Navbar.Offcanvas>
+  </Container>
+</Navbar>
     </div>
   );
 }
