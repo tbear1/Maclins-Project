@@ -1,13 +1,13 @@
 import {Carousel,} from 'react-bootstrap';
-import Mk4 from './Mk4.jpg';
-import PWmk4 from './PWmk4.jpg';
-import SmokeyNmk4 from './SmokeyNmk4.jpg';
+import Mk4 from '../assets/Mk4.jpg';
+import PWmk4 from '../assets/PWmk4.jpg';
+import SmokeyNmk4 from '../assets/SmokeyNmk4.jpg';
 
-function Supras() {
+export default function Supras() {
   return (
-    <div className="App">
+    <div>
       <Carousel>
-  <Carousel.Item>
+      <Carousel.Item>
     <img
       className="d-block w-100"
       src={Mk4}
@@ -47,4 +47,3 @@ function Supras() {
   );
 }
 
-export default Supras;
