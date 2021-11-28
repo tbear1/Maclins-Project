@@ -1,4 +1,4 @@
-import {Navbar, Container, Nav, Offcanvas, NavDropdown,} from 'react-bootstrap';
+import {Navbar, Container, Nav, Offcanvas} from 'react-bootstrap';
 import './App.css';
 
 function App() {
