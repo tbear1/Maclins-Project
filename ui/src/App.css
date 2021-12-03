@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
+
+.navbar {
+  font-family: 'PT Serif', serif;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
